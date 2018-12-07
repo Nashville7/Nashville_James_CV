@@ -1,5 +1,8 @@
-header{
-
+header {
+    background-color: rgba(0, 183, 255, 0.603);
+    margin: 50px 0;
+    width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -45,7 +48,7 @@ li a.active {
     background-color: darkgoldenrod;
 }
 img {
-    width: 100%;
+    /* width: 100%; */
 }
 
 
