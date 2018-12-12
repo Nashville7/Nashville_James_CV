@@ -1,176 +1,95 @@
-header {
-    background-color: rgba(0, 183, 255, 0.603);
-    margin: 50px 0;
-    width: 100%;
-    margin: 0 auto;
+html {
+    scroll-behavior: smooth;
 }
+
 
 body {
-    /* font-family: 'Adamina', serif; */
+    margin: 0;
+    padding: 0;
+    background: gray;
     font-family: 'Fjalla One', sans-serif;
-    /* background-image: linear-gradient(to right, #336699 5%,#DBCBD8 40%,#59F8E8); */
-    
-    background-image: url(https://images.wallpaperscraft.com/image/field_dawn_sky_beautiful_scenery_87654_1920x1080.jpg);
-    background-size: 100% 120em;
-    background-repeat: no-repeat;
-    
-    
-
-}
-
-/* class  */
-/* .logo {
-    padding: 70px;
-    transition: width 2s;
-    
-    
-       
-} */
-/* id */
-#navbar {
-    position: fixed;
-    top: 0%; 
-    width: 100%;
+    background-image: url(images/ATI-ASUS-ROG-Widescreen-Wallpapers-HD.jpg)
     
     
 }
+ nav {
+      /* width: 100%;  */
+     /* background: rgba(0, 0, 0, 0.692); */
+     overflow: auto;   
+     
+     
+ }
+ ul {
+     padding: 0;
+     margin: 0 0 0 150px;
+     text-decoration: none;
+     list-style: none;
+     
+     
+     
+ }
 
-ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: rgb(32, 19, 221);
-        width: 100%;
-        
-          
-}
+ li {
+     float: left;
+ }
 
-/* navbar a links */
-li a {
-        display: block;
-        color: rgba(238, 241, 10, 0.822);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: xx-large;
-        float: right;
-        text-shadow: 1px 3px red;
-        
+ .logo img {
+     position: absolute;
+     margin-top:15px;
+     margin-left: 10px;
+     background-color: rgb(255, 0, 0);
+     border-radius: 30px;
+     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    /* transition: width 2s, height 2s, transform 2s; */
     
 
-}
+ }
 
-a:hover {
-    background-color: darkkhaki;
-    color: red;
-}
-
-.Name {
-    
-    width: 100%;
-    text-align: center;
-    text-shadow: 2px 2px;
-    margin-top: 0px;
-    font-size: 2em;
-    letter-spacing: 3px;
-    color: #3d12dae8;
-}
+ .logo img:hover {
+     width: 150px;
+     height: 150px;
+     -webkit-transform: rotate(360deg); /* Safari */
+     
     
     
-    
-.box-2 {
-    background-color: #0920eed2;
-    color:#000000;
-    border-top: 5px blue solid;
-    border-bottom: 5px blue solid;
+ }
 
-    border-width: 5px;
-    line-height: 2.5em;
-    text-align: center;
-    
+ nav a {
+     width: 200px;
+     display: block;
+     padding: 20px 0px;
+     text-decoration: none;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     color: rgba(238, 241, 10, 0.822);
+     text-align: center;
+     text-shadow: 1px 2px red;
+     font-size: 23px;
+     border-radius: 50px;
+     
+ }
 
-}
-
-.container {
-    width:500px;
-    margin:auto;
-    
-}
-
-#logo {
-   padding: 70px;
-  width: 100px;
-  height: 100px;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-  transition: width 2s, height 2s, transform 2s;
-   
-}
-
-.logo1 {
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
-    transition: width 2s ease-out, height 2s ease-out;
-    background: red;
-    position: absolute;
-    
-    
-}
-
-.logo1:hover {
-    width: 150px;
-    height: 150px;
-    transform: rotate(360deg); 
-
-}
-
-.logo2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
-    transition: width 2s ease-out, height 2s ease-out;
-    background:blue;
-    margin-left: 160px;
-    position: absolute;
-    
-}
-
-.logo2:hover {
-    width: 150px;
-    height: 150px;
-    transform: rotate(360deg); 
-
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
-    transition: width 2s ease-out, height 2s ease-out;
-    background:red;
-    position: absolute;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-    transition: width 2s, height 2s, transform 2s;
-}
-
-.logo:hover {
-    width: 150px;
-    height: 150px;
-    -webkit-transform: rotate(360deg); /* Safari */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ nav a:hover {
+     background: #dc3545;;
+     transition: 0.5s;
+     
+ }
+ .myname {
+     background-color: rgba(0, 247, 255, 0.479);
+     color: rgb(255, 238, 0);
+     text-align: center;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 25px;
+     padding: 50px;
+ }
+ .myname h3 {
+     color: rgb(30, 255, 0);
+ }
+ section {
+     color: Black;
+     background-color: rgba(255, 255, 255, 0.575);
+     text-align: center;
+ }
+ #skill h1 {
+    grid-gap: 50px;
+    color: #dc3545;
+ }
