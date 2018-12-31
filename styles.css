@@ -3,38 +3,47 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Fjalla One', sans-serif; 
-    background-image: url(images/ATI-ASUS-ROG-Widescreen-Wallpapers-HD.jpg);
-    /* background-size: cover;  */
+    background-image: url(images/windows_10_balls-wallpaper-1920x1080.jpg);
+    background-attachment: fixed;
     /* background-repeat: no-repeat; */
+    background-size: cover;
     
-    
-}
-.container {
-    background-color: blueviolet;
-    border: 12px rgba(255, 0, 0, 0.527) solid;
     
 }
 
+.header {
+    background-color: rgba(0, 8, 8, 0.911);
+    /* background-color: rgba(0, 247, 255, 0.479); */
+    color: rgb(255, 238, 0);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 29px;
+    padding: 50px;
+    text-shadow: 1px 6px black;
+
+}
+
+
+.header h3 {
+    color: rgb(38, 0, 255);
+    text-shadow:1px 4px #dc3545;
+    font-size:39px;   
+}
+
  nav {
-      /* width: 100%;  */
-     /* background: rgba(0, 0, 0, 0.692); */
      overflow: auto;   
      
-     
  }
+ 
  ul {
      padding: 0;
      margin: 0 0 0 150px;
      text-decoration: none;
-     list-style: none;
-     
-     
-     
+     list-style: none;      
  }
 
  li {
@@ -48,24 +57,19 @@ body {
      background-color: rgb(255, 0, 0);
      border-radius: 30px;
      -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-     
     
-    
-
  }
 
  .logo img:hover {
      width: 150px;
      height: 150px;
      -webkit-transform: rotate(360deg); /* Safari */
-     
-    
     
  }
 
  nav a {
      width: 190px;
-     display: block;
+     display: block; 
      padding: 20px 0px;
      text-decoration: none;
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -74,8 +78,7 @@ body {
      text-shadow: 1px 2px red;
      font-size: 23px;
      border-radius: 50px;
-     
-     
+         
  }
 
  nav a:hover {
@@ -83,50 +86,38 @@ body {
      transition: 0.5s;
      
  }
+
  .laptop {
      /* background-color: rgba(0, 247, 255, 0.185); */
      padding: 20px 15px;
      margin: 0;
+     /* padding-right: 900px; */
+ }    
      
-     
-     
- }
- .myname {
-     background-color: rgba(0, 247, 255, 0.479);
-     color: rgb(255, 238, 0);
-     text-align: center;
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     font-size: 27px;
-     padding: 50px;
-     text-shadow: 1px 6px black;
     
-     
-
- }
- .myname h3 {
-     color: rgb(38, 0, 255);
-     text-shadow:1px 4px #dc3545;
-     font-size:37px;
-     
- }
- section {
-     color: Black;
+.content {
+     color: white;
      background-color: rgba(255, 255, 255, 0.575);
-     text-align: center;
-     border-radius: 15px;
+     border-radius: 10px;
      margin: 60px;
-    
+     padding: 10px;
      
+ }
 
- }
- #skill h1 {
-    grid-gap: 50px;
-    color: #dc3545;
- }
- .cdetails {
+
+.footer-container {
+    margin: 60px;
+    padding: 10px;
+    height: 100px;
+}
+.footer {
+    background-color: rgba(14, 8, 1, 0.63);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
     
 
- }
- .cdetails h1 {
-    
- }
+
