@@ -1,4 +1,6 @@
 /*Base styles */
+
+/* To make scroling move smooth */
 html {
     scroll-behavior: smooth;
 }
@@ -6,17 +8,13 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Fjalla One', sans-serif; 
-    
-    /* background-image: url(images/apple-mouse-artificial-flowers-blurred-background-1229861.jpg); */
-    /* background-image: url(images/cc-bg-1.jpg);
-    /* background-image: url(images/camera_3-wallpaper-1920x1080.jpg); */
+    font-family: 'Thasadith', sans-serif;
     background-image: url(images/1296185_apple-laptop-hd-wallpaper.jpg);
     background-attachment: fixed;
     background-size: cover;
 
 }
-
+/* styling the header */
 .header {
     /* background-color: rgba(0, 8, 8, 0.377); */
     color: rgb(255, 238, 0);
@@ -28,68 +26,94 @@ body {
     /* background: rgba(79, 108, 189, 0.404); */
     padding-top: 60px;
     
-    
-    
-
 }
 
+/* My download cv button */
 .button {
     margin: 0;
     padding-right: 900px;
 }
+.button li {
+    list-style: none;
+}
 .button a {
-    background-color: #ef3f3d;
-    border-color: #ef3f3d;
-    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    border-color: #11ABB0;
+    color: #00000096;
     text-shadow: none;
     text-decoration: none;
     border-radius: 14px;
     font-size: 33px;
-    border: 10px solid #ef3f3d;
-    
+    border: 10px solid #11ABB0;
 }
 
+/* button hover effect */
+.button a:hover{
+    background-color: #819ac9a1;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 20px;
+    
+}
+/* end of download cv button */
 
+/* heading 1 properties & values */
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
     color: rgba(44, 8, 248, 0.699);
     text-align: center;
 }
+/* end of heading 1 properties & values */
 
+/* paragraph properties & values */
+p {
+    font-size: 17px;
+}
+
+/* heading 3 properties & values */
 .header h3 {
     color: rgb(38, 0, 255);
     text-shadow:1px 4px #dc3545;
     font-size:39px;   
 }
-/* navbar */
+/* end of heading 1 properties & values */
+
+/* For creating my whole navbar */
+
+/* my navbar */
   nav {
-     overflow: auto;
+     /* overflow: auto; */
      background: rgb(0, 0, 0);
      position: fixed;
      width: 100%;
-     background: rgba(8, 8, 8, 0.904);
+     height: 4rem;
+     /* background: #2B2B2B; */
+     background: rgba(218, 208, 208, 0.815);
+
      
      
  }
  nav ul {
+     margin: 0;
      padding: 0;
-     margin: 0 0 0 150px;
      text-decoration: none;
-     
-     
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
      
  }
 
  nav li {
-     float: left;
      list-style: none;
+     
      
  }
  
 /* navbar anchor tag */
  nav a {
-    width: 190px;
     display: block;
     padding: 20px 0px;
     text-decoration: none;
@@ -98,21 +122,26 @@ h1 {
     text-align: center;
     text-shadow: 1px 2px red;
     font-size: 21px;
-    border-radius: 50px;
+    border-radius: 70px;
+    margin: 0;
     
     
         
 }
+/* end of navbar */
 
 /* navbar hover effect */
 
 nav a:hover {
-    background: #dc3545;;
-    transition: 0.5s;
-    
+    /* background: #dc3545;; */
+    transition: 0.10s;
+    color: rgba(0, 255, 221, 0.938);
     
 }
 
+/* end of navbar hover effect */
+
+/* my logo properties and values */
  .logo img {
      position: absolute;
      margin-top:0;
@@ -131,202 +160,134 @@ nav a:hover {
     
  }
 
+ /* end of my logo's properties and values */
+
  
- .laptop {
+ #laptop {
      padding: 20px 15px;
      margin: 0;
-     
- }    
- .laptop img {
-   
  }
-     
-
+     /* my about section */
 .about {
-        /* color: black;
-        background-color: rgba(255, 255, 255, 0.575);
-        border-radius: 5px;
-        margin: 25px; */
-        /* padding: 10px; */
-        /* height: 450px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px;
-         */
-         /* background: rgba(32, 32, 90, 0.938); */
-         padding: 10px;
-         /* margin: 6px; */
-         color: white;
-         /* border: 20px solid rgba(12, 9, 87, 0.459); */
-         /* margin-top: 30px; */
-         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-         box-shadow: 0 0 20px 20px rgb(0, 0, 0) inset ;
-         border: 20px solid rgb(5, 1, 1);
-         background: rgb(0, 0, 0);
+
+    background: #2B2B2B;
+    padding-top: 20px;
+    padding-bottom: 66px;
+    overflow: hidden;
+    color: white;
+    text-align: justify;
+    background-size: cover;
          
-         
-        
-        
     }
 
+    /* my about heading 2 */
+ .about h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    
+ }
+ .about p {
+     padding-right: 100px;
+     font-size: 18px;
+ }
 
+.profile-pic {
+    width: 250px;
+    height: 444px;
+    border-radius: 20px solid;
+    float: right;
+    padding-right: 170px;
+}
+ .about p {
+    padding-left: 5%;
+    padding-right: 5%;
+ }
+
+
+/* my education section */
 .education {
-        /* color:black;
-        background-color: rgba(255, 255, 255, 0.575);
-        border-radius: 5px;
-        margin: 25px; */
-        /* padding: 10px; */
-        /* height: 400px; */
-        /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px;
-         */
-         /* background: rgb(23, 23, 61); */
-         /* padding: 10px;
-         margin: 6px; */
-         /* background: rgba(32, 32, 90, 0.938); */
-         color: white;
-         /* border: 20px solid rgba(12, 9, 87, 0.459); */
-         /* margin-top: 30px; */
-         box-shadow: 0 0 20px 20px black inset;
-         height: 300px;
-         border: 20px solid rgb(0, 0, 0);
-         background: rgb(0, 0, 0);
-        
+    color: White;
+    box-shadow: 0 0 20px 20px rgb(0, 0, 0) inset;
+    height: 800px;
+    border: 20px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+         
 }
 
-/* .education:hover {
-    background: #eb2d40bd;;
-    transition: 0.5s;
-    
-} */
+
+
+.tertairy {
+    text-align:justify;
+}
+
+.tertairy h1 {
+    text-align:center ;
+}
+.tertairy p {
+    text-align: justify;
+}
+
 
 .skills {
-        /* color:black;
-        background-color: rgba(255, 255, 255, 0.575);
-        border-radius: 5px;
-        margin: 25px; */
-        /* padding: 10px; */
-        /* height: 400px; */
-        /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px; */
-        /* background: rgb(23, 23, 61); */
-        /* background: rgba(32, 32, 90, 0.938); */
-        /* padding: 10px; */
-        /* margin: 6px; */
         color: white;
-        /* border: 20px solid rgba(12, 9, 87, 0.459); */
-        /* margin-top: 30px; */
-        box-shadow: 0 0 20px 20px black inset;
+        box-shadow: 0 0 20px 20px rgb(179, 170, 170) inset;
         text-align: center;
-        height: 300px;
-        border: 20px solid rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.945);
+        height: 450px;
+        border: 20px solid rgb(179, 170, 170);
+        background: rgb(179, 170, 170);
         
         
         
 }
 
 .pfolio {
-        /* color:White;
-        background-color: rgba(255, 255, 255, 0.575);
-        border-radius: 5px;
-        margin: 25px; */
-        /* padding: 10px; */
-        /* height: 500px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 16px;
-        border: 20px solid rgba(30, 27, 238, 0.568); */
-        /* background: rgb(23, 23, 61); */
-        /* background: rgba(32, 32, 90, 0.938); */
-        /* padding: 10px; */
-        /* margin: 6px; */
         color: white;
-        /* border: 20px solid rgba(12, 9, 87, 0.459); */
-        /* margin-top: 30px; */
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         box-shadow: 0 0 20px 20px black inset;
-        height: 350px;
+        height: 450px;
         border: 20px solid rgb(0, 0, 0);
         background: rgb(0, 0, 0);
     
        
 }
+/* my contact section */
 .contact {
-        /* color:black;
-        background-color: rgba(255, 255, 255, 0.575);
-        border-radius: 5px;
-        margin: 25px;
-        /* padding: 10px; */
-        /* height: 300px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 14px;  */
-        /* background: rgb(23, 23, 61);
+        
         padding: 10px;
-        margin: 6px;
         color: white;
-        border: 20px solid rgba(12, 9, 87, 0.459);
-        margin-top: 30px;
-        box-shadow: 0 0 4px 4px white inset;
-         */
-        /* background: rgb(23, 23, 61); */
-        padding: 10px;
-        /* margin: 6px; */
-        color: white;
-        /* border: 20px solid rgba(12, 9, 87, 0.459); */
-        /* margin-top: 30px; */
-        box-shadow: 0 0 4px 4px rgb(0, 0, 0) inset;
-        display: flex;
-        /* padding-left: 450px; */
-        box-shadow: 0 0 30px 20px black inset;
-        border: 20px solid rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.945);
+        /* border: 20px solid rgb(0, 0, 0);
+        background: rgb(0, 0, 0); */
+        border: 20px solid rgb(179, 170, 170);
+        background: rgb(179, 170, 170);
 }
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+.contact-container > div {
+    text-align: center;
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+}
+/* end of contact section */
 
-.contact img,h3 {
-    
-}
 .footer-container {
     margin: 0px;
     padding: 0px;
-    
-    
-    
+
 }
 .footer {
-    /* background-color: rgba(255, 255, 255, 0.575);
-    /* background-color: rgba(14, 8, 1, 0.63); */
-    /* color: black;
-    text-align: center;
-    border-radius: 10px;
-    height: 300px;  */
     background: rgb(0, 0, 0);
-    /* padding: 10px; */
-    /* margin: 6px; */
     color: rgb(255, 255, 255);
-    /* border: 20px solid rgba(12, 9, 87, 0.459); */
-    /* margin-top: 30px; */
     box-shadow: 0 0 4px 4px rgb(0, 0, 0) inset;
     display: flex;
-    /* padding-left: 450px; */
     box-shadow: 0 0 20px 30px rgb(0, 0, 0) inset;
     height: 15px;
     border: 20px solid rgb(0, 0, 0);
     text-align: left;
     
     
-    
-    
-    
-    
-}
-
-.tertairy {
-    padding-left: 150px;
-}
-.secondary {
-    /* display: flex; */
-    float: left;
-    padding-left: 200px;
-
 }
 
 .parallax {
@@ -371,6 +332,19 @@ nav a:hover {
     background-attachment: fixed;
     height: 6px;
     background-size: cover;
+}
+
+p {
+    font-size: 17px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid img {
+    width: 400px;
+    height: 300px;
 }
 
 
