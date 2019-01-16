@@ -5,6 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* whole html document properties */
 body {
     margin: 0;
     padding: 0;
@@ -14,17 +15,87 @@ body {
     background-size: cover;
 
 }
+
 /* styling the header */
 .header {
-    /* background-color: rgba(0, 8, 8, 0.377); */
     color: rgb(255, 238, 0);
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 39px;
     padding: 10px;
     text-shadow: 1px 6px black;
-    /* background: rgba(79, 108, 189, 0.404); */
     padding-top: 60px;
+}
+
+/* heading 1 properties & values */
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: rgba(44, 8, 248, 0.699);
+    text-align: center;
+}
+
+
+/* paragraph properties & values */
+p {
+    font-size: 17px;
+    color: white;
+}
+
+/* heading 3 properties & values */
+.header h3 {
+    color: rgb(38, 0, 255);
+    text-shadow:1px 4px #dc3545;
+    font-size:39px;   
+}
+
+/* for creating my whole navbar */
+/* my navbar */
+  nav {
+     background: rgb(0, 0, 0);
+     position: fixed;
+     width: 100%;
+     height: 4rem;
+
+     background: rgba(218, 208, 208, 0.815);
+
+/* navbar unordered list fix */
+ }
+ nav ul {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+     
+ }
+/* navbar list style fix */
+
+ nav li {
+     list-style: none;
+     
+     
+ }
+ 
+/* navbar anchor tag properties */
+ nav a {
+    display: block;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(238, 241, 10, 0.822);
+    text-align: center;
+    text-shadow: 1px 2px red;
+    font-size: 21px;
+    border-radius: 70px;
+    margin: 0;
+         
+}
+
+/* navbar hover effect */
+ nav a:hover {
+    transition: 0.10s;
+    color: rgba(0, 255, 221, 0.938);
     
 }
 
@@ -33,9 +104,12 @@ body {
     margin: 0;
     padding-right: 900px;
 }
+
 .button li {
     list-style: none;
 }
+
+/* button anchor tag properties */
 .button a {
     background-color: rgb(255, 255, 255);
     border-color: #11ABB0;
@@ -58,118 +132,15 @@ body {
     border-radius: 20px;
     
 }
-/* end of download cv button */
+/* picture in the centre of my header section */
 
-/* heading 1 properties & values */
-h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
-    color: rgba(44, 8, 248, 0.699);
-    text-align: center;
-}
-/* end of heading 1 properties & values */
-
-/* paragraph properties & values */
-p {
-    font-size: 17px;
-}
-
-/* heading 3 properties & values */
-.header h3 {
-    color: rgb(38, 0, 255);
-    text-shadow:1px 4px #dc3545;
-    font-size:39px;   
-}
-/* end of heading 1 properties & values */
-
-/* For creating my whole navbar */
-
-/* my navbar */
-  nav {
-     /* overflow: auto; */
-     background: rgb(0, 0, 0);
-     position: fixed;
-     width: 100%;
-     height: 4rem;
-     /* background: #2B2B2B; */
-     background: rgba(218, 208, 208, 0.815);
-
-     
-     
- }
- nav ul {
-     margin: 0;
-     padding: 0;
-     text-decoration: none;
-     display: grid;
-     grid-template-columns: repeat(5,1fr);
-     
- }
-
- nav li {
-     list-style: none;
-     
-     
- }
- 
-/* navbar anchor tag */
- nav a {
-    display: block;
-    padding: 20px 0px;
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgba(238, 241, 10, 0.822);
-    text-align: center;
-    text-shadow: 1px 2px red;
-    font-size: 21px;
-    border-radius: 70px;
-    margin: 0;
-    
-    
-        
-}
-/* end of navbar */
-
-/* navbar hover effect */
-
-nav a:hover {
-    /* background: #dc3545;; */
-    transition: 0.10s;
-    color: rgba(0, 255, 221, 0.938);
-    
-}
-
-/* end of navbar hover effect */
-
-/* my logo properties and values */
- .logo img {
-     position: absolute;
-     margin-top:0;
-     margin-left: 10px;
-     border-radius: 30px;
-     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-      
-     
- }
-
- .logo img:hover {
-     width: 150px;
-     height: 150px;
-     -webkit-transform: rotate(360deg); /* Safari */
-     
-    
- }
-
- /* end of my logo's properties and values */
-
- 
  #laptop {
      padding: 20px 15px;
      margin: 0;
- }
-     /* my about section */
+}
+ /* about section properties: custom margin and sizing */
 .about {
-
+    margin: 0;
     background: #2B2B2B;
     padding-top: 20px;
     padding-bottom: 66px;
@@ -178,18 +149,22 @@ nav a:hover {
     text-align: justify;
     background-size: cover;
          
-    }
+}
 
-    /* my about heading 2 */
+/* about heading 2 */
  .about h2 {
     padding-left: 5%;
     padding-right: 5%;
     
- }
+}
+
+/* about paragraph properties */
  .about p {
      padding-right: 100px;
      font-size: 18px;
- }
+     padding-left: 5%;
+     padding-right: 5%;
+}
 
 .profile-pic {
     width: 250px;
@@ -198,10 +173,6 @@ nav a:hover {
     float: right;
     padding-right: 170px;
 }
- .about p {
-    padding-left: 5%;
-    padding-right: 5%;
- }
 
 
 /* my education section */
@@ -290,25 +261,8 @@ nav a:hover {
     
 }
 
-.parallax {
-    padding: 70px 0;
-    position: relative;
-    background-image: url(images/black-and-white-computer-device-331684.jpg);
-    background-attachment: fixed;
-    height: 6px;
-    background-size: cover;
-}
 
-.parallax2 {
-    padding: 70px 0;
-    position: relative;
-    background-image: url(images/business-computer-connection-7379.jpg);
-    background-attachment: fixed;
-    height: 6px;
-    background-size: cover;
-}
-
-.parallax3 {
+.parallax1 {
     padding: 70px 0;
     position: relative;
     background-image: url(images/book-computer-design-326424.jpg);
@@ -317,15 +271,8 @@ nav a:hover {
     background-size: cover;
 }
 
-.parallax4 {
-    padding: 70px 0;
-    position: relative;
-    background-image: url(images/apple-computer-desk-18104.jpg);
-    background-attachment: fixed;
-    height: 6px;
-    background-size: cover;
-}
-.parallax5 {
+
+.parallax2 {
     padding: 70px 0;
     position: relative;
     background-image: url(images/apple-computer-connection-205421.jpg);
@@ -334,9 +281,6 @@ nav a:hover {
     background-size: cover;
 }
 
-p {
-    font-size: 17px;
-}
 
 .grid {
     display: grid;
