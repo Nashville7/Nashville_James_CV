@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Thasadith', sans-serif;
-    background-image: url(images/1296185_apple-laptop-hd-wallpaper.jpg);
+    background-image: url("../images/1296185_apple-laptop-hd-wallpaper.jpg");
     background-attachment: fixed;
     background-size: cover;
 
@@ -46,17 +46,15 @@ p {
 .header h3 {
     color: rgb(38, 0, 255);
     text-shadow:1px 4px #dc3545;
-    font-size:39px;   
+    font-size:43px;   
 }
 
 /* for creating my whole navbar */
 /* my navbar */
   nav {
-     background: rgb(0, 0, 0);
      position: fixed;
      width: 100%;
      height: 4rem;
-
      background: rgba(218, 208, 208, 0.815);
 
 /* navbar unordered list fix */
@@ -105,6 +103,7 @@ p {
     padding-right: 900px;
 }
 
+/* removing the list style */
 .button li {
     list-style: none;
 }
@@ -113,7 +112,7 @@ p {
 .button a {
     background-color: rgb(255, 255, 255);
     border-color: #11ABB0;
-    color: #00000096;
+    color: rgb(38, 0, 255);
     text-shadow: none;
     text-decoration: none;
     border-radius: 14px;
@@ -123,17 +122,12 @@ p {
 
 /* button hover effect */
 .button a:hover{
-    background-color: #819ac9a1;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
+    background-color: #819ac9cb;
     transition: all .2s ease-in-out;
-    border-radius: 20px;
+    border-radius: 5px;
     
 }
 /* picture in the centre of my header section */
-
  #laptop {
      padding: 20px 15px;
      margin: 0;
@@ -151,7 +145,7 @@ p {
          
 }
 
-/* about heading 2 */
+/* about section heading 2 properties */
  .about h2 {
     padding-left: 5%;
     padding-right: 5%;
@@ -202,11 +196,11 @@ p {
 .skills {
         margin: 0;
         color: white;
-        box-shadow: 0 0 20px 20px rgb(179, 170, 170) inset;
+        box-shadow: 0 0 20px 20px #2B2B2B inset;
         text-align: center;
         height: 450px;
-        border: 20px solid rgb(179, 170, 170);
-        background: rgb(179, 170, 170);     
+        border: 20px solid #2B2B2B;;
+        background: #2B2B2B;
 }
 
 /* portfolio section properties: custom margin and sizing */
@@ -224,32 +218,30 @@ p {
 /* portfolio made into a grid */
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
 }
 
 /* size of the image */
 .grid img {
-    width: 400px;
-    height: 300px;
-    padding-left: 120px;
-}
-
-.grid a:hover {
-    background-color: #80818386;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    width: 300px;
+    height: 280px;
+    margin-left: 50px;
     
 }
+
+.grid img:hover {
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    
+}
+
 /* contact section properties: custom margin and sizing */
 .contact {
     margin: 0;
-    padding: 10px;
     color: white;
-    border: 20px solid rgb(179, 170, 170);
-    background: rgb(179, 170, 170);
+    box-shadow: 0 0 20px 20px #2B2B2B inset;
+    border: 20px solid #2B2B2B;;
+    background: #2B2B2B;
 }
 .contact-container {
     display: flex;
@@ -282,11 +274,10 @@ p {
 
 }
 
-
 .parallax1 {
     padding: 70px 0;
     position: relative;
-    background-image: url(images/book-computer-design-326424.jpg);
+    background-image: url("../images/book-computer-design-326424.jpg");
     background-attachment: fixed;
     height: 6px;
     background-size: cover;
@@ -296,11 +287,48 @@ p {
 .parallax2 {
     padding: 70px 0;
     position: relative;
-    background-image: url(images/apple-computer-connection-205421.jpg);
+    background-image: url("../images/apple-computer-connection-205421.jpg");
     background-attachment: fixed;
     height: 6px;
     background-size: cover;
 }
+
+
+/* Responsive Design */
+    /* Mobile Devices */
+@media only screen and (max-width:768px) {
+
+    nav {
+        position: fixed;
+        width: 60%;
+        height: 4rem;
+        /* background: rgba(156, 37, 37, 0.815); */
+        
+   
+    }
+    .profile-pic {
+        width: 250px;
+        height: 444px;
+        border-radius: 20px solid;
+        float: right;
+        padding-right: 170px;
+    }
+}
+
+/* Responsive Design */
+    /* Tablets */
+    @media only screen and (min-width:600px) {
+
+}
+
+
+/* Responsive Design */
+    /* Desktop */
+    @media only screen and (min-width:768px) {
+        
+    }
+
+
 
 
 
