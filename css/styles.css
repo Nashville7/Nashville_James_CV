@@ -12,7 +12,7 @@ body {
     font-family: 'Thasadith', sans-serif;
 
 }
-
+/* container for the whole html */
 .container {
     display: grid;
     width: 100%;

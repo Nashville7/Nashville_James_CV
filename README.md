@@ -13,6 +13,7 @@ My CV
 
  - HTML
  - CSS
+ 
 
 
 ### Other Technologies Used
@@ -24,7 +25,7 @@ Languages:
 
 - CSS
 - HTML
-- SASS
+
 
 ```
 ```
