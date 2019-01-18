@@ -24,6 +24,7 @@ Languages:
 
 - CSS
 - HTML
+- SASS
 
 ```
 ```
@@ -37,13 +38,13 @@ Tools:
 
 ### Changelog
 
-2018-11-15:
+2019-01-18:
 - Base folders added
 - Readme Created
 - Live Link Created
 
 ## Contributors
 
-Nashville James - 2018
+Nashville James - 2019
 
 
