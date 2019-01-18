@@ -5,15 +5,17 @@ html {
     scroll-behavior: smooth;
 }
 
-/* whole html document properties */
+/* styling of the body*/
 body {
     margin: 0;
     padding: 0;
     font-family: 'Thasadith', sans-serif;
-    background-image: url("../images/1296185_apple-laptop-hd-wallpaper.jpg");
-    background-attachment: fixed;
-    background-size: cover;
 
+}
+
+.container {
+    display: grid;
+    width: 100%;
 }
 
 /* styling the header */
@@ -25,6 +27,11 @@ body {
     padding: 10px;
     text-shadow: 1px 6px black;
     padding-top: 60px;
+    background-image: url("../images/1296185_apple-laptop-hd-wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    
 }
 
 /* heading 1 properties & values */
@@ -56,6 +63,7 @@ p {
      width: 100%;
      height: 4rem;
      background: rgba(218, 208, 208, 0.815);
+     word-spacing: 4px;
 
 /* navbar unordered list fix */
  }
@@ -71,8 +79,6 @@ p {
 
  nav li {
      list-style: none;
-     
-     
  }
  
 /* navbar anchor tag properties */
@@ -87,7 +93,6 @@ p {
     font-size: 21px;
     border-radius: 70px;
     margin: 0;
-         
 }
 
 /* navbar hover effect */
@@ -98,18 +103,9 @@ p {
 }
 
 /* My download cv button */
-.button {
-    margin: 0;
-    padding-right: 900px;
-}
-
-/* removing the list style */
-.button li {
-    list-style: none;
-}
 
 /* button anchor tag properties */
-.button a {
+.laptop a {
     background-color: rgb(255, 255, 255);
     border-color: #11ABB0;
     color: rgb(38, 0, 255);
@@ -121,17 +117,20 @@ p {
 }
 
 /* button hover effect */
-.button a:hover{
+.laptop a:hover{
     background-color: #819ac9cb;
     transition: all .2s ease-in-out;
     border-radius: 5px;
-    
 }
+
 /* picture in the centre of my header section */
- #laptop {
+ .laptop img {
      padding: 20px 15px;
      margin: 0;
+     height: 6em;
+     width: 11em;
 }
+
  /* about section properties: custom margin and sizing */
 .about {
     margin: 0;
@@ -141,15 +140,13 @@ p {
     overflow: hidden;
     color: white;
     text-align: justify;
-    background-size: cover;
-         
+    background-size: cover;         
 }
 
 /* about section heading 2 properties */
  .about h2 {
     padding-left: 5%;
     padding-right: 5%;
-    
 }
 
 /* about paragraph properties */
@@ -166,7 +163,7 @@ p {
     height: 444px;
     border-radius: 20px solid;
     float: right;
-    padding-right: 170px;
+    margin: 1rem 7rem 1rem 1rem;
 }
 
 
@@ -178,43 +175,55 @@ p {
     height: 800px;
     border: 20px solid rgb(0, 0, 0);
     background: rgb(0, 0, 0);
-         
+    
 }
 
+/* div class tertairy */
 .tertairy {
     text-align:justify;
 }
-
+/* div class tertairy heading 1 */
 .tertairy h1 {
     text-align:center ;
 }
+
+/* div class tertairy paragraph */
 .tertairy p {
     text-align: justify;
 }
 
 /* skills section properties: custom margin and sizing */
 .skills {
-        margin: 0;
-        color: white;
-        box-shadow: 0 0 20px 20px #2B2B2B inset;
-        text-align: center;
-        height: 450px;
-        border: 20px solid #2B2B2B;;
-        background: #2B2B2B;
+    margin: 0;
+    color: white;
+    box-shadow: 0 0 20px 20px #2B2B2B inset;
+    text-align: center;
+    height: 450px;
+    border: 20px solid #2B2B2B;;
+    background: #2B2B2B;
 }
 
 /* portfolio section properties: custom margin and sizing */
-.pfolio {
+.portfolio {
     margin: 0;
-        color: white;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        box-shadow: 0 0 20px 20px black inset;
-        height: 450px;
-        border: 20px solid rgb(0, 0, 0);
-        background: rgb(0, 0, 0);
-    
-       
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 0 20px 20px black inset;
+    height: 480px;
+    border: 20px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+
+/* portfolio section heading 4 properties     */
 }
+.portfolio h4 {
+    font: 15px/24px 'opensans-semibold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #95A3A3;
+}
+
 /* portfolio made into a grid */
 .grid {
     display: grid;
@@ -230,9 +239,9 @@ p {
     
 }
 
+/* hover on the image */
 .grid img:hover {
     box-shadow: 0 0 15px rgb(255, 255, 255);
-    
 }
 
 /* contact section properties: custom margin and sizing */
@@ -243,10 +252,12 @@ p {
     border: 20px solid #2B2B2B;;
     background: #2B2B2B;
 }
+
 .contact-container {
     display: flex;
     justify-content: center;
 }
+
 .contact-container > div {
     text-align: center;
     display: inline;
@@ -271,9 +282,9 @@ p {
 .footer-container {
     margin: 0px;
     padding: 0px;
-
 }
 
+/* parallax image properties */
 .parallax1 {
     padding: 70px 0;
     position: relative;
@@ -283,7 +294,7 @@ p {
     background-size: cover;
 }
 
-
+/* parallax image properties */
 .parallax2 {
     padding: 70px 0;
     position: relative;
@@ -293,50 +304,329 @@ p {
     background-size: cover;
 }
 
-
 /* Responsive Design */
+
     /* Mobile Devices */
-@media only screen and (max-width:768px) {
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
-    nav {
-        position: fixed;
-        width: 60%;
-        height: 4rem;
-        /* background: rgba(156, 37, 37, 0.815); */
-        
-   
-    }
-    .profile-pic {
-        width: 250px;
-        height: 444px;
-        border-radius: 20px solid;
-        float: right;
-        padding-right: 170px;
-    }
+html {
+    contain: content;
+}
+
+nav {
+    height: auto;
+    text-align: center;
+    right: 0px;
+    z-index: 1;
+    position: relative;
+}
+
+nav ul {
+    display: block;
+    text-align: center;
+}
+
+nav a {   
+    text-align: center;
+    margin-left: 0px !important;
+    width: 100% !important;
+}
+
+.profile-pic {
+    margin: 20px;
+    float: none;
+    padding: 0;
+    padding-right: 14%;
+}
+
+p {
+    text-align: left;
+    font-size: 0.88em;
+}
+.about {
+    width: 100%;
+    text-align: center;
+    
+}
+.about p {
+    padding-right: 15%;
+}
+
+    
+.education,
+.skills {
+    height: auto;
+    padding-right: 10%;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.contact p {
+    padding-right: 10%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid img {
+    width: 200px;
+    height: 110px;
+    margin-left: 40px;
+    
+}
+.portfolio {
+    height: 610px;
+    
+}
+.portfolio h4 {
+    padding-right: 10%;
+}
+.laptop img {
+    padding: 20px 15px;
+    margin: 0;
+    height: 3em;
+    width: 5em;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
 }
 
 /* Responsive Design */
-    /* Tablets */
-    @media only screen and (min-width:600px) {
+    /*Tablets*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    html {
+        contain: content;
+        }
+        .container {
+            width: 100%;
+        }
+        .header {
+            padding-right: 22%
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            height: 4rem;
+            background: rgba(218, 208, 208, 0.815);
+            word-spacing: 4px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            
+        }
+        nav a {
+            display: block;
+            padding: 20px 0px;
+            text-decoration: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgba(238, 241, 10, 0.822);
+            text-align: center;
+            text-shadow: 1px 2px red;
+            font-size: 21px;
+            border-radius: 70px;
+            margin: 0;
+        }
+        .about h1{
+            padding-right: 27%;
+        }
+        .profile-pic {
+            width: 250px;
+            height: 444px;
+            border-radius: 20px solid;
+            float: none;
+            margin: 1rem 7rem 1rem 1rem;
+            padding-left: 25%;
+        }
+        p {
+            font-size: 17px;
+            color: white;
+        }
+        .education {
+            margin: 0;
+            color: White;
+            box-shadow: 0 0 20px 20px rgb(0, 0, 0) inset;
+            height: 800px;
+            border: 20px solid rgb(0, 0, 0);
+            background: rgb(0, 0, 0);
+            
+        }
+        .skills {
+            margin: 0;
+            color: white;
+            box-shadow: 0 0 20px 20px #2B2B2B inset;
+            text-align: center;
+            height: 450px;
+            border: 20px solid #2B2B2B;;
+            background: #2B2B2B;
+            padding-right: 27%;
+        }
 
+        .skills h1 {
+            padding-left: 15%;
+        } 
+        
+        .icons {
+            padding-right: 5%;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            padding-right: 20%;
+        }
+        .contact h1 {
+            padding-right: 24%;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
+        }
+        .grid img {
+            width: 250px;
+            height: 280px;
+            margin-left: 50px;
+            
+        }
+        .portfolio {
+            margin: 0;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-shadow: 0 0 20px 20px black inset;
+            height: 480px;
+            border: 20px solid rgb(0, 0, 0);
+            background: rgb(0, 0, 0);
+        }
+        .portfolio h1 {
+            padding-right: 20%;
+        }
+        
+        .laptop img {
+            padding: 20px 15px;
+            margin: 0;
+            height: 6em;
+            width: 11em;
+        }
+  }
+        
+/* Responsive Design
+    /*Desktop*/
+    @media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 1) { 
+
+html {
+contain: content;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background: rgba(218, 208, 208, 0.815);
+    word-spacing: 4px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+nav a {
+    display: block;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(238, 241, 10, 0.822);
+    text-align: center;
+    text-shadow: 1px 2px red;
+    font-size: 21px;
+    border-radius: 70px;
+    margin: 0;
+}
+.profile-pic {
+    width: 250px;
+    height: 444px;
+    border-radius: 20px solid;
+    float: right;
+    margin: 1rem 7rem 1rem 1rem;
+}
+p {
+    font-size: 17px;
+    color: white;
+}
+.education {
+    margin: 0;
+    color: White;
+    box-shadow: 0 0 20px 20px rgb(0, 0, 0) inset;
+    height: 800px;
+    border: 20px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    
+}
+.skills {
+    margin: 0;
+    color: white;
+    box-shadow: 0 0 20px 20px #2B2B2B inset;
+    text-align: center;
+    height: 450px;
+    border: 20px solid #2B2B2B;;
+    background: #2B2B2B;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+}
+.grid img {
+    width: 250px;
+    height: 280px;
+    margin-left: 50px;
+    
+}
+.portfolio {
+    margin: 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 0 20px 20px black inset;
+    height: 480px;
+    border: 20px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+}
+.laptop img {
+    padding: 20px 15px;
+    margin: 0;
+    height: 6em;
+    width: 11em;
+}
 
-/* Responsive Design */
-    /* Desktop */
-    @media only screen and (min-width:768px) {
-        
-    }
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
